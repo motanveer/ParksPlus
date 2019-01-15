@@ -4477,7 +4477,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 
 .navbar-toggler {
   border: none;
-  color: #34495e;
+  color: #2ecc71;
   margin: 0 0 0 21px;
   padding: 0 21px;
   height: 53px;
@@ -4486,7 +4486,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 }
 
 .navbar-toggler:before {
-  color: #16a085;
+  color: #2ecc71;
   content: "\e61a";
   font-family: "Flat-UI-Pro-Icons";
   font-size: 22px;
@@ -4514,7 +4514,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 }
 
 .navbar-nav > li > a {
-  font-size: 16px;
+  font-size: 26px;
   padding: 15px 0;
   line-height: 23px;
   font-weight: 700;

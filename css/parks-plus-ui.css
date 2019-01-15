@@ -1,0 +1,46 @@
+.parks-highlight
+{
+    color: #2ecc71;
+}
+.parks-primary
+{
+    color:#27ae60;
+}
+
+.navbar{margin-top: 25px;}
+
+.navbar-brand
+{
+    margin-left: 18px;
+    margin-right: 20px;
+    
+}
+
+.navbar{
+    font-size: 3em;
+}
+
+.navbar-collapse{
+    margin-left: 20px;
+}
+li{
+    margin-right: 10px;
+    margin-top: 35px;
+    color: black;
+}
+
+.fui-heart
+{
+     color: #c0392b;
+}
+
+.fui-location
+{
+    color: #2980b9
+    
+}
+
+.fui-star
+{
+    color: #8e44ad;
+}
