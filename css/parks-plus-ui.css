@@ -7,7 +7,7 @@
     color:#27ae60;
 }
 
-.navbar{margin-top: 25px;}
+.navbar{margin-top: 35px;}
 
 .navbar-brand
 {
@@ -24,9 +24,15 @@
     margin-left: 20px;
 }
 li{
-    margin-right: 10px;
+    margin-right: 15px;
     margin-top: 35px;
     color: black;
+}
+
+
+li:hover
+{
+    animation: heartBeat 1.5s;
 }
 
 .fui-heart
@@ -40,7 +46,16 @@ li{
     
 }
 
+.test
+{background: red; height: 100vh;}
+
 .fui-star
 {
     color: #8e44ad;
 }
+
+.btn{margin-top: 20px;}
+
+@media (max-width: 500px) { 
+    h1{font-size:2.12em;}
+ }
