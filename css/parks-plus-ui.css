@@ -61,4 +61,9 @@ li:hover
     .shrink{
         width: 250px;
     }
+    .logo
+    {
+        width: 125px;
+    }
+    
  }
