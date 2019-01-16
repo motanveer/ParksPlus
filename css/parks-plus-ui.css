@@ -54,8 +54,11 @@ li:hover
     color: #8e44ad;
 }
 
-.btn{margin-top: 20px;}
+
 
 @media (max-width: 500px) { 
     h1{font-size:2.12em;}
+    .shrink{
+        width: 250px;
+    }
  }
