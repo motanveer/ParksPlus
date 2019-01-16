@@ -30,10 +30,6 @@ li{
 }
 
 
-li:hover
-{
-    animation: heartBeat 1.5s;
-}
 
 .fui-heart
 {
@@ -65,5 +61,4 @@ li:hover
     {
         width: 125px;
     }
-    
  }
