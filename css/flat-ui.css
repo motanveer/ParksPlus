@@ -1384,7 +1384,7 @@ label {
   border: 2px solid #bdc3c7;
   color: #34495e;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.467;
   padding: 8px 12px;
   height: 42px;
@@ -1442,7 +1442,7 @@ fieldset[disabled] input[type="text"] {
 .form-group-lg .form-control,
 .form-group-lg .select2-search input[type="text"], .select2-search
 .form-group-lg input[type="text"] {
-  height: 45px;
+  height: 43px;
   padding: 10px 15px;
   font-size: 17px;
   line-height: 1.235;
@@ -1455,11 +1455,12 @@ fieldset[disabled] input[type="text"] {
 .form-group-hg .form-control,
 .form-group-hg .select2-search input[type="text"], .select2-search
 .form-group-hg input[type="text"] {
-  height: 53px;
+  height: 78px;
   padding: 10px 16px;
   font-size: 22px;
   line-height: 1.318;
   border-radius: 6px;
+  width: 300px;
 }
 
 .form-control-feedback {
