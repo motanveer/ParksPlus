@@ -51,14 +51,30 @@ li{
     height: 100vh;
 }
 .test
-{background: red; height: 45vh;}
+{       border: 2px solid red;
+    height: 45vh;}
 
 .fui-star
 {
     color: #8e44ad;
 }
 
+#add-hero
+{
+    height: auto;
+}
 
+#new-park
+{
+   
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 0;
+
+}
 
 @media (max-width: 500px) { 
     h1{font-size:2.12em;}
@@ -70,7 +86,14 @@ li{
         width: 125px;
     }
     .test
-{background: red; height: 30vh;}
+    {
+       height: 30vh;
+       border: 2px solid red;
+    }
+
+    #new-park
+    {font-size: 35px;}
+
  }
 
  
