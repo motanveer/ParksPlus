@@ -75,8 +75,54 @@ li{
     margin-bottom: 0;
 
 }
+#new-park-sub
+{
+    color:gray;
+    font-size: 16px;
+}
 
-@media (max-width: 500px) { 
+
+
+ .red-line
+ {
+     /*border: red 2px solid;*/
+     padding: 20px;
+ }
+
+ 
+ input
+ {
+     margin: 0 auto;
+ }
+
+ label
+ {
+     margin: 0 auto;
+     font-size: 34px;   
+     margin-bottom: 0;
+    
+ }
+
+ form{
+     margin: 0 auto;
+     display: block;
+     width: 100%;
+ }
+
+
+.label-sub
+{
+    font-size: 17px;
+    color: gray;
+    margin-top: 0;
+}
+
+.input-hg
+{
+    width: 600px;
+}
+
+@media (max-width: 620px) { 
     h1{font-size:2.12em;}
     .shrink{
         width: 250px;
@@ -94,21 +140,11 @@ li{
     #new-park
     {font-size: 35px;}
 
- }
+    .input-hg
+    {
+        width: 300px;
+        font-size: 15.5px;
+    }
 
- 
- input
- {
-     margin: 0 auto;
- }
 
- label
- {
-     margin: 0 auto;
-     font-size: 30px;   
  }
-
-.form-group
-{
-    margin-top: 70px;
-}

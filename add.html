@@ -39,12 +39,37 @@
   </nav>
 
   <div class="container">
-    <div class="row content align-items-center dflex ">
-      <div class="col-12 test" id="add-hero">
+    <div class="row content justify-content-center">
+      <div class="col-12 tests" id="add-hero">
         <img src="/assets/SVG/undraw_directions_x53j.svg" class="rounded mx-auto d-block shrink" width="500px">
         <h1 id=new-park>New Park</h1>
-        <p class="text-center">... who dis?</p>
-      </div>  
+        <p id="new-park-sub" class="text-center">... who dis?</p>
+      </div>
+
+      <div class="row dflex align-items-center justify-content-center">
+        <div class="col-12 red-line align-self-center center ">
+          <!--------------------------- FORM ---------------------------->
+          <form class="red-line align-self-center tests needs-validation has-feedback">
+            <!--Trip Codename Input-->
+            <div class="form-group tests">
+              <label for="trip-codename">Trip Codename</label>
+              <p class="label-sub">code names make everything cooler</p>
+              <input class="form-control input-hg" placeholder="McVay's Girlfriend" type="text">
+            </div>
+            <!--Park Location Input-->
+            <div class="form-group tests">
+              <label for="trip-codename">Find Your Park</label>
+              <p class="label-sub">what's the name of the park?</p>
+              <input class="form-control input-hg" placeholder="Bear Mountain Park" type="text">
+            </div>
+            <!--Park Location Input-->
+
+          </form>
+          <!--------------------------- FORM ---------------------------->
+
+        </div>
+      </div>
+
 
     </div>
 
@@ -62,25 +87,3 @@
 </body>
 
 </html>
-
-
-<!--
-
-  FORMS:
-
-  <form id="add-park" class="align-self-center">
-          <div class="form-group dflex align-items-center text-center">
-              <label for="title" class="text-center align-self-center"> Codename</label>
-              <p>Pasta king is a monarch and a very delicous one at that</p>
-              <input id="title" type="text" class="form-control input-hg">
-
-              <label for="title" class="text-center align-self-center"> Codename</label>
-              <input id="title" type="text" class="form-control input-hg">
-
-              <label for="title" class="text-center align-self-center"> Codename</label>
-              <input id="title" type="text" class="form-control input-hg">
-          </div>
-          
-      </form>
-
--->
