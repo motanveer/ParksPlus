@@ -21,14 +21,15 @@
   <!-- Loading Fonts-->
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
-
-
+  
 </head>
 
 <body>
+
+
   <nav class="navbar navbar-expand-md">
     <a href="index.html" class="navbar-brand parks-highlight logo"><img src="/assets/SVG/logo.svg" height="52px;"></a>
-    <button class="navbar-toggler ml-auto navbar-light parks-highlight" data-toggle="collapse" data-target="#navbar-menu"></button>
+    <div class="navbar-toggler ml-auto navbar-light parks-highlight" data-toggle="collapse" data-target="#navbar-menu"></div>
     <div class="collapse navbar-collapse" id="navbar-menu">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link parks-highlight" href="#">Saved&nbsp &nbsp<span class="fui-heart park"></span></a></li>
@@ -62,7 +63,44 @@
               <p class="label-sub">what's the name of the park?</p>
               <input class="form-control input-hg" placeholder="Bear Mountain Park" type="text">
             </div>
-            <!--Park Location Input-->
+            <!--Activites Checkboxes-->
+            <div class="form-group">
+              <div class="checkbox-group test">
+                <label class="activity-label" for="fireworks">Fireworks</label>
+                <input  class="expand" id="fireworks" type="checkbox">
+               
+                <label class="activity-label" for="hiking">Hiking</label>
+                <input  class="expand" id="hiking" type="checkbox">
+
+                <label class="activity-label" for="fishing">Fishing</label>
+                <input  class="expand" id="fishing" type="checkbox">
+
+                <label class="activity-label" for="Picnic">Picnic</label>
+                <input  class="expand" id="Picnic" type="checkbox">
+
+                <label class="activity-label" for="Biking">Biking</label>
+                <input  class="expand" id="Biking" type="checkbox">
+
+                <label class="activity-label" for="Camping">Camping</label>
+                <input  class="expand" id="Camping" type="checkbox">
+              </div>
+              
+              <div class="activity-collection  dflex flex-row  text-center ">
+                <div  onclick="test()" class="activity-card"><img class="activity-thumbnail rounded mx-auto d-block shrink" src="/assets/SVG/fireworks.svg">Fireworks</div>
+                <div class="activity-card"><img class="activity-thumbnail rounded mx-auto d-block shrink" src="/assets/SVG/picnic.svg">Picnic</div>
+                <div class="activity-card"><img class="activity-thumbnail rounded mx-auto d-block shrink" src="/assets/SVG/fishing.svg">Fishing</div>
+                <div class="activity-card"><img class="activity-thumbnail rounded mx-auto d-block shrink" src="/assets/SVG/biking.svg">Biking</div>
+                <div class="activity-card"><img class="activity-thumbnail rounded mx-auto d-block shrink" src="/assets/SVG/camping.svg">Camping</div>
+                <div class="activity-card"><img class="activity-thumbnail rounded mx-auto d-block shrink" src="/assets/SVG/hiking.svg">Hiking</div>
+              </div>
+            </div>
+            <div class="form-group dflex">
+                <label for="trip-codename">Who's Going?</label>
+                <p class="label-sub">type a name and hit add</p>
+                <div class="friends-input-wrapper">
+                    <input class="form-control input-hg" placeholder="Debroah" type="text"><span class="fui-plus"></span> 
+                </div>
+              </div>
 
           </form>
           <!--------------------------- FORM ---------------------------->
@@ -83,6 +121,8 @@
     <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
 
     <script src="scripts/flat-ui.js"></script>
+    <script src="/scripts/parks-plus.js"></script>
+  
 
 </body>
 
