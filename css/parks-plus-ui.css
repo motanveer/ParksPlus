@@ -155,6 +155,10 @@ li{
 
 }
 
+.activity-card:hover
+{
+    border: #27ae60 2px solid;
+}
 
 .activity-thumbnail
 {
