@@ -119,7 +119,7 @@ li{
 
 .input-hg
 {
-    width: 600px;
+    width: 615px;
 }
 
 .activity-label
@@ -129,7 +129,7 @@ li{
 
 .checkbox-group
 {
- display: none;   
+  display: none;
 }
 
 .expand
@@ -188,6 +188,16 @@ li{
     color: #2ecc71;
 }
 
+.fui-cross
+{
+    color:#e74c3c;
+}
+table
+{
+    margin: 0 auto;
+   
+}
+
 @media (max-width: 650px) { 
     h1{font-size:2.12em;}
     .shrink{
@@ -231,6 +241,8 @@ li{
     flex-wrap: nowrap;
     margin-right: 20px;
 }
+
+
 
 
 
