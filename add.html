@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ParksPlus</title>
+  <title>Add a Park</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Loading Bootstrap -->
@@ -24,7 +24,7 @@
   
 </head>
 
-<body>
+<body onload="clearFields()">
 
 
   <nav class="navbar navbar-checkbox-input-md">
@@ -55,13 +55,13 @@
             <div class="form-group tests">
               <label for="trip-codename">Trip Codename</label>
               <p class="label-sub">code names make everything cooler</p>
-              <input class="form-control input-hg" placeholder="McVay's Girlfriend" type="text">
+              <input id="trip-codename" class="form-control input-hg" placeholder="Jumper Cable Jello" type="text">
             </div>
             <!--Park Location Input-->
             <div class="form-group tests">
               <label for="trip-codename">Find Your Park</label>
               <p class="label-sub">what's the name of the park?</p>
-              <input class="form-control input-hg" placeholder="Bear Mountain Park" type="text">
+              <input id="park-location" class="form-control input-hg" placeholder="Bear Mountain Park" type="text">
             </div>
             <!--Activites Checkboxes-->
             <div class="form-group">
@@ -125,7 +125,7 @@
 
               <div class="form-group text-center mt-5">
 
-              <button type="submit" class="text-center btn btn-hg btn-primary">Save Park</button>
+              <button  id="submit" type="button" class="text-center btn btn-hg btn-primary">Save Park</button>
               </div>
           </form>
           <!--------------------------- FORM ---------------------------->
