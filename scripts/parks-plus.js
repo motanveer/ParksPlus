@@ -15,6 +15,23 @@
 
 
 
+/*-------------------------------[UI] Data Structure     ----------------------------*/
+
+class park
+{
+    constructor(codeName, parkLocation, actvitySelection, friendsList)
+    {
+        this.codeName = codeName;
+        this.parkLocation = parkLocation;
+        this.actvitySelection = actvitySelection;
+        this.friendsList = friendsList;
+    }
+}
+
+var friendsList = [];
+
+
+
 /*-------------------------------[UI] Activity Selection  ---------------------------
  
 checks and unchecks checkboxes and shows a selection state via updated styles
@@ -80,4 +97,29 @@ checks and unchecks checkboxes and shows a selection state via updated styles
  */
 
  var friendAdd = document.querySelector("#add-friend");
- friendAdd.addEventListener("click")
+ friendAdd.addEventListener("click", function()
+ {
+  addFriend();
+ });
+
+ 
+ function addFriend()
+ {
+
+    let friend = document.querySelector("#friend-input");
+    friendsList.push(friend.value);
+
+    const list = document.querySelector('#friend-table');
+    const row = document.createElement('tr');
+    
+    row.innerHTML =
+        `<td>${friend.value}</td>
+         <td><span class="fui-cross"></span></td>`;
+    
+         list.appendChild(row);
+
+    friend.value = '';
+    console.log(friendsList);
+
+
+ }
