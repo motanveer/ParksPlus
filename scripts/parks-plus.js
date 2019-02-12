@@ -26,7 +26,6 @@ This project uses the following resources and technologies:
 
 class park {
 
-
     constructor(codeName, parkLocation, actvitySelection, friendsList) {
         this.codeName = codeName;
         this.parkLocation = parkLocation;
@@ -50,15 +49,20 @@ var parkLocation = document.querySelector("#park-location");
 var submit = document.querySelector("#submit");
 submit.addEventListener("click", function () {
     
+
+    parkList.push(new park(codeName.value,parkLocation.value,actvitySelection, friendsList));
+
     //console.log(parkLocation.value);
     //console.log(codeName)
     //getCheckbox();
     //console.log(actvitySelection);
-    parkList.push(new park(codeName.value,parkLocation.value,actvitySelection, friendsList));
-
-        
-
+  
     console.log(parkList)
+    
+    localStorage.setItem("parks",JSON.stringify(parkList));
+
+
+console.log(localStorage.getItem("parks"))
 });
 
 
