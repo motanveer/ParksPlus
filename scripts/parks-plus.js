@@ -34,7 +34,8 @@ class park {
     }
 }
 
-var parkList = []; //Stores the entire list of park objects
+var parkList = [];//Stores the entire list of park objects
+
 var friendsList = []; //Stores the list of everyone's who attening the park visit
 var actvitySelection = [];
 
@@ -49,8 +50,17 @@ var parkLocation = document.querySelector("#park-location");
 var submit = document.querySelector("#submit");
 submit.addEventListener("click", function () {
     
-
-    parkList.push(new park(codeName.value,parkLocation.value,actvitySelection, friendsList));
+   var localInput = JSON.parse(localStorage.getItem("parks"));
+   var newPark = JSON.parse(localStorage.getItem("parks"));
+   if(localInput === null)
+   {
+    parkList.push(newPark);
+   }
+   else
+   {
+    parkList.push(newPark);
+   }
+  
 
     //console.log(parkLocation.value);
     //console.log(codeName)
@@ -61,8 +71,11 @@ submit.addEventListener("click", function () {
     
     localStorage.setItem("parks",JSON.stringify(parkList));
 
+ 
 
-console.log(localStorage.getItem("parks"))
+   //console.log(parkList);
+//console.log(localStorage.getItem("parks"));
+ 
 });
 
 
@@ -81,7 +94,7 @@ var checkboxes = [...document.querySelectorAll(".checkbox-input")];  //Array of 
 
 // Arrays must match one to one at the index level for the activity cards to map up correctly to their respective checkboxes
 
-console.log(checkboxes);
+//console.log(checkboxes);
 
 for (let index = 0; index < activityCards.length; index++) {
     activityCards[index].addEventListener("click", function () {
@@ -182,6 +195,14 @@ checks and unchecks checkboxes and shows a selection state via updated styles
 
     codeName.value = '';
     parkLocation.value = '';
+
+    
+    //localStorage.clear();
+    
+    console.log(localStorage.getItem("parks"));
+    console.log(JSON.parse(localStorage.getItem("parks")));
+ //   console.log(parkList);
+    //console.log(localStorage.getItem("parks"))
     
  }
 
