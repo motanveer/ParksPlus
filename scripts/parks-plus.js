@@ -58,14 +58,27 @@ submit.addEventListener("click", function () {
         actvitySelection[changer]=activityID;
     }
     
-    parkList.push(new park(codeName.value,parkLocation.value,actvitySelection, friendsList));
-    console.log(parkList);
-    
-   var jsonParkList = JSON.stringify(parkList);
-   localStorage.setItem('storedParks', jsonParkList);
-   console.log(JSON.parse(localStorage.getItem('storedParks')));
 
- 
+    if (JSON.parse(localStorage.getItem('storedParks') == null))
+    {
+
+        //Create new parkList
+        parkList.push(new park(codeName.value,parkLocation.value,actvitySelection, friendsList));
+        var jsonParkList = JSON.stringify(parkList);
+        localStorage.setItem('storedParks', jsonParkList);
+        console.log(JSON.parse(localStorage.getItem('storedParks')));
+    }
+    else
+    {
+        parkList = JSON.parse(localStorage.getItem('storedParks'));
+        parkList.push(new park(codeName.value,parkLocation.value,actvitySelection, friendsList));
+        localStorage.removeItem('storedParks');
+        var jsonParkList = JSON.stringify(parkList);
+        localStorage.setItem('storedParks', jsonParkList);
+        console.log(JSON.parse(localStorage.getItem('storedParks')));
+        //console.log(parkList);
+
+    } 
 });
 
 
@@ -223,6 +236,10 @@ checks and unchecks checkboxes and shows a selection state via updated styles
     parkLocation.value = '';
    
     console.log(JSON.parse(localStorage.getItem('storedParks')));
+    if (JSON.parse(localStorage.getItem('storedParks') == null))
+    {
+        console.log("No parks found!");
+    }
 
     
  }
