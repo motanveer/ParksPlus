@@ -62,10 +62,10 @@ submit.addEventListener("click", function () {
    }
   
 
-    //console.log(parkLocation.value);
-    //console.log(codeName)
+    console.log(parkLocation.value);
+    console.log(codeName)
     //getCheckbox();
-    //console.log(actvitySelection);
+    console.log(actvitySelection);
   
     console.log(parkList)
     
@@ -73,7 +73,7 @@ submit.addEventListener("click", function () {
 
  
 
-   //console.log(parkList);
+   console.log(parkList);
 //console.log(localStorage.getItem("parks"));
  
 });
@@ -159,6 +159,7 @@ function addFriend() {
 
     //-- The following will add the friend name to an array 
     let friend = document.querySelector("#friend-input");
+    let friendID = friend.value+'1';
     friendsList.push(friend.value);
 
 
@@ -166,19 +167,54 @@ function addFriend() {
     // Note there is no connection between the array, used for storage and the table
     const list = document.querySelector('#friend-table');
     const row = document.createElement('tr');
-
+    
     row.innerHTML =
         `<td>${friend.value}</td>
-         <td><span class="fui-cross"></span></td>`;
-
+         <td><span id="${friendID}" class="fui-cross"></span></td>`;
+    
+    row.id = friend.value;
     list.appendChild(row);
 
-    friend.value = '';
+    //console.log(friendID);
+    var loader = friendID.toString();
+    //console.log(loader);
+
+    //console.log(document.getElementById(loader));
+    document.getElementById(loader).addEventListener("click", removeFriend);
+    friend.value = "";
 
 
-    console.log(friendsList);
+    //console.log(friendsList);
+
+
+    function removeFriend()
+    {   
+        var getRemovalID = document.getElementById(loader).id; 
+        //var getRemovalID = document.querySelector(`span[id=${friendID}]`).id;
+        var getTRID  = getRemovalID.substring(0,getRemovalID.length-1);
+        
+        //console.log("Element removed called: " + getTRID);
+        //console.log(friend.value);
+        //console.log(friendsList)
+        
+        document.getElementById(getTRID).remove();
+
+        for (var index = 0; index <= friendsList.length; index++)
+        {
+            if(getTRID == friendsList[index])
+            {
+                var spliceIndex = friendsList.indexOf(getTRID);
+                friendsList.splice(spliceIndex,1);
+            }
+        }
+
+        //console.log(friendsList);
+    
+    }
 
 }
+
+
 
 /*-------------------------------[UI] Clear Fields  ---------------------------
  
@@ -198,14 +234,13 @@ checks and unchecks checkboxes and shows a selection state via updated styles
 
     
     //localStorage.clear();
-    
-    console.log(localStorage.getItem("parks"));
-    console.log(JSON.parse(localStorage.getItem("parks")));
- //   console.log(parkList);
-    //console.log(localStorage.getItem("parks"))
+
+    //console.log(localStorage.getItem("parks"));
+   // console.log(JSON.parse(localStorage.getItem("parks")));
+   //console.log(parkList);
+  //console.log(localStorage.getItem("parks"))
     
  }
-
 
  function startAuto()
  {
