@@ -49,12 +49,15 @@
       <div class="row dflex align-items-center justify-content-center">
         <div class="col-12 red-line align-self-center center ">
           <!--------------------------- FORM ---------------------------->
-          <form class="red-line align-self-center tests needs-validation has-feedback">
+          <form class="red-line align-self-center tests needs-validation has-feedback" novalidate>
             <!--Trip Codename Input-->
             <div class="form-group tests">
               <label for="trip-codename">Trip Codename</label>
               <p class="label-sub">code names make everything cooler</p>
               <input id="trip-codename" class="form-control input-hg" placeholder="Jumper Cable Jello" type="text">
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
             <!--Park Location Input-->
             <div class="form-group tests">
@@ -124,7 +127,7 @@
 
               <div class="form-group text-center mt-5">
 
-              <a href="#"><button href="confirmation.html" id="submit" type="button" class="text-center btn btn-hg btn-primary">Save Park</button></a>
+              <a href="confirmation.html"><button href="confirmation.html" id="submit" type="button" class="text-center btn btn-hg btn-primary">Save Park</button></a>
               </div> 
           </form>
           <!--------------------------- FORM ---------------------------->
@@ -152,8 +155,8 @@
 
      <!-- Loading Google Places Library-->
      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYoaFLia-6YHxg4Usl0itCvuV6YoI5Ul0&libraries=places&callback=startAuto"></script>
-     
-
+     <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js" ></script>
+ 
   
 
 </body>

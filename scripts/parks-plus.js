@@ -24,6 +24,7 @@ This project uses the following resources and technologies:
 
 /*-------------------------------[UI] Data Structure     ----------------------------*/
 
+
 class park {
 
     constructor(codeName, parkLocation, actvitySelection, friendsList) {
@@ -49,6 +50,24 @@ var parkLocation = document.querySelector("#park-location");
 
 var submit = document.querySelector("#submit");
 submit.addEventListener("click", function () {
+    
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('success');
+            }, false);
+          });
+        }, false);
+      })();
 
     for (var changer = 0; changer < actvitySelection.length; changer++)
     {
@@ -76,7 +95,7 @@ submit.addEventListener("click", function () {
         var jsonParkList = JSON.stringify(parkList);
         localStorage.setItem('storedParks', jsonParkList);
         console.log(JSON.parse(localStorage.getItem('storedParks')));
-        //console.log(parkList);
+        console.log(parkList);
 
     } 
 });
