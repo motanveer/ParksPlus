@@ -20,27 +20,28 @@
 
 
     <!-- Loading Fonts-->
-
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet">
 
 </head>
 
 <body>
     <nav class="navbar  navbar-expand-md">
-        <a href="#" class="navbar-brand parks-highlight logo"><img src="/assets/SVG/logo.svg" height="52px;"></a>
+        <a href="index.html" class="navbar-brand parks-highlight logo"><img src="/assets/SVG/logo.svg" height="52px;"></a>
         <button class="navbar-toggler ml-auto navbar-light parks-highlight" data-toggle="collapse"
             data-target="#navbar-menu"></button>
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link parks-highlight" href="#">Saved&nbsp &nbsp<span
+                <li class="nav-item"><a class="nav-link parks-highlight" href="saved.html">Saved&nbsp &nbsp<span
                             class="fui-heart park"></span></a></li>
-                <li class="nav-item"><a class="nav-link parks-highlight" href="#">About&nbsp &nbsp<span
+                <li class="nav-item"><a class="nav-link parks-highlight" href="about.html">About&nbsp &nbsp<span
                             class="fui-star"></a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container red-line">
+    <div class="container red-line ">
         <div class="row content fluid align-items-center red-line dflex ">
             <div class="col-sm-12 align-self-center align-items-center dflex text-center">
                 <img class="rounded mx-auto d-block shrink" width="320px;" src="/assets/SVG/saved-classic.svg">
@@ -50,257 +51,137 @@
             </div>
         </div>
         <div class="row content fluid align-items-center dflex align-self-center justify-content-center text-center">
-            <div class="red-line col-lg-4 sm-12 align-items-center dflex align-self-center text-center ">
-                <a href="#" class="card education">
+            <div class="red-line col-lg-4 md-12 align-items-center dflex align-self-center text-center ">
+                <a class="card wallet">
                     <div class="overlay"></div>
                     <div class="circle">
-
-                        <svg width="71px" height="76px" viewBox="29 14 71 76" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                transform="translate(30.000000, 14.000000)">
-                                <g id="Group-8" fill="#D98A19">
-                                    <g id="Group-7">
-                                        <g id="Group-6">
-                                            <path
-                                                d="M0,0 L0,75.9204805 L69.1511499,75.9204805 L0,0 Z M14.0563973,32.2825679 L42.9457663,63.9991501 L14.2315268,63.9991501 L14.0563973,32.2825679 Z"
-                                                id="Fill-1"></path>
-                                        </g>
-                                    </g>
-                                </g>
-                                <g id="Group-20" transform="translate(0.000000, 14.114286)" stroke="#FFFFFF"
-                                    stroke-linecap="square">
-                                    <path d="M0.419998734,54.9642857 L4.70316223,54.9642857" id="Line"></path>
-                                    <path d="M0.419998734,50.4404762 L4.70316223,50.4404762" id="Line"></path>
-                                    <path d="M0.419998734,45.9166667 L4.70316223,45.9166667" id="Line"></path>
-                                    <path d="M0.419998734,41.3928571 L2.93999114,41.3928571" id="Line"></path>
-                                    <path d="M0.419998734,36.8690476 L4.70316223,36.8690476" id="Line"></path>
-                                    <path d="M0.419998734,32.3452381 L4.70316223,32.3452381" id="Line"></path>
-                                    <path d="M0.419998734,27.8214286 L4.70316223,27.8214286" id="Line"></path>
-                                    <path d="M0.419998734,23.297619 L2.93999114,23.297619" id="Line"></path>
-                                    <path d="M0.419998734,18.7738095 L4.70316223,18.7738095" id="Line"></path>
-                                    <path d="M0.419998734,14.25 L4.70316223,14.25" id="Line"></path>
-                                    <path d="M0.419998734,9.72619048 L4.70316223,9.72619048" id="Line"></path>
-                                    <path d="M0.419998734,5.20238095 L2.93999114,5.20238095" id="Line"></path>
-                                    <path d="M0.419998734,0.678571429 L4.70316223,0.678571429" id="Line"></path>
-                                </g>
-                            </g>
-                        </svg>
+                        <i class="fas fa-tree"></i>
                     </div>
-                    <p>Education</p>
+                    <p class="mb-2 card-header">Park Name</p>
+                    <p class="add-name"> 123 Main Street Park Ave</p>
+                    <table class="table  w-75">
+                        <thead>
+                            <span class="head">Activites</span>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                                    <p class="gray">Fishing</p>
+                                </td>
+                                <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                                    <p class="gray">Fishing</p>
+                                </td>
+                                <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                                    <p class="gray">Fishing</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table w-75 table-striped">
+                        <thead>
+                            <span class="head">Who's Going?</span>
+                        </thead>
+                        <tr>
+                            <td>Lily James</td>
+                        </tr>
+                        
+                        <tr>
+                                <td>Lily James</td>
+                            </tr>
+                    </table>
                 </a>
-
             </div>
-            <div class="red-line col-lg-4 sm-12">
-
-                <a href="#" class="card wallet">
+            <div class="red-line col-lg-4 md-12 align-items-center dflex align-self-center text-center ">
+                <a class="card wallet">
                     <div class="overlay"></div>
                     <div class="circle">
-
-
-                        <svg width="78px" height="60px" viewBox="23 29 78 60" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                transform="translate(23.000000, 29.500000)">
-                                <rect id="Rectangle-3" fill="#AC8BE9" x="67.8357511" y="26.0333433" width="9.40495664"
-                                    height="21.8788565" rx="4.70247832"></rect>
-                                <rect id="Rectangle-3" fill="#6A5297" x="67.8357511" y="38.776399" width="9.40495664"
-                                    height="10.962961" rx="4.70247832"></rect>
-                                <polygon id="Rectangle-2" fill="#6A5297"
-                                    points="57.3086772 0 67.1649301 26.3776902 14.4413177 45.0699507 4.58506484 18.6922605">
-                                </polygon>
-                                <path
-                                    d="M0,19.6104296 C0,16.2921718 2.68622235,13.6021923 5.99495032,13.6021923 L67.6438591,13.6021923 C70.9547788,13.6021923 73.6388095,16.2865506 73.6388095,19.6104296 L73.6388095,52.6639057 C73.6388095,55.9821635 70.9525871,58.672143 67.6438591,58.672143 L5.99495032,58.672143 C2.68403068,58.672143 0,55.9877847 0,52.6639057 L0,19.6104296 Z"
-                                    id="Rectangle" fill="#8B6FC0"></path>
-                                <path
-                                    d="M47.5173769,27.0835169 C45.0052827,24.5377699 40.9347162,24.5377699 38.422622,27.0835169 L36.9065677,28.6198808 L35.3905134,27.0835169 C32.8799903,24.5377699 28.8078527,24.5377699 26.2957585,27.0835169 C23.7852354,29.6292639 23.7852354,33.7559532 26.2957585,36.3001081 L36.9065677,47.0530632 L47.5173769,36.3001081 C50.029471,33.7559532 50.029471,29.6292639 47.5173769,27.0835169"
-                                    id="Fill-12" fill="#F6F1FF"></path>
-                                <rect id="Rectangle-4" fill="#AC8BE9" x="58.0305835" y="26.1162588" width="15.6082259"
-                                    height="12.863158"></rect>
-                                <ellipse id="Oval" fill="#FFFFFF" cx="65.8346965" cy="33.0919007" rx="2.20116007"
-                                    ry="2.23319575"></ellipse>
-                            </g>
-                        </svg>
-
+                        <i class="fas fa-tree"></i>
                     </div>
-                    <p>Wallet</p>
-                </a>
+                    <p class="mb-2 card-header">Park Name</p>
+                    <p class="add-name"> 123 Main Street Park Ave</p>
+                    <table class="table  w-75">
+                        <thead>
+                            <span class="head">Activites</span>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                                    <p class="gray">Fishing</p>
+                                </td>
 
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table w-75 table-striped">
+                        <thead>
+                            <span class="head">Who's Going?</span>
+                        </thead>
+                        <tr>
+                            <td>Lily James</td>
+                        </tr>
+                        <tr>
+                                <td>Lily James</td>
+                            </tr>
+                    </table>
+                </a>
             </div>
-            <div class="red-line col-lg-4 sm-12">
 
-                <a href="#" class="card wallet">
+            <div class="red-line col-lg-4 md-12 align-items-center dflex align-self-center text-center ">
+                <a class="card wallet">
                     <div class="overlay"></div>
                     <div class="circle">
-
-
-                        <svg width="78px" height="60px" viewBox="23 29 78 60" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                transform="translate(23.000000, 29.500000)">
-                                <rect id="Rectangle-3" fill="#AC8BE9" x="67.8357511" y="26.0333433" width="9.40495664"
-                                    height="21.8788565" rx="4.70247832"></rect>
-                                <rect id="Rectangle-3" fill="#6A5297" x="67.8357511" y="38.776399" width="9.40495664"
-                                    height="10.962961" rx="4.70247832"></rect>
-                                <polygon id="Rectangle-2" fill="#6A5297"
-                                    points="57.3086772 0 67.1649301 26.3776902 14.4413177 45.0699507 4.58506484 18.6922605">
-                                </polygon>
-                                <path
-                                    d="M0,19.6104296 C0,16.2921718 2.68622235,13.6021923 5.99495032,13.6021923 L67.6438591,13.6021923 C70.9547788,13.6021923 73.6388095,16.2865506 73.6388095,19.6104296 L73.6388095,52.6639057 C73.6388095,55.9821635 70.9525871,58.672143 67.6438591,58.672143 L5.99495032,58.672143 C2.68403068,58.672143 0,55.9877847 0,52.6639057 L0,19.6104296 Z"
-                                    id="Rectangle" fill="#8B6FC0"></path>
-                                <path
-                                    d="M47.5173769,27.0835169 C45.0052827,24.5377699 40.9347162,24.5377699 38.422622,27.0835169 L36.9065677,28.6198808 L35.3905134,27.0835169 C32.8799903,24.5377699 28.8078527,24.5377699 26.2957585,27.0835169 C23.7852354,29.6292639 23.7852354,33.7559532 26.2957585,36.3001081 L36.9065677,47.0530632 L47.5173769,36.3001081 C50.029471,33.7559532 50.029471,29.6292639 47.5173769,27.0835169"
-                                    id="Fill-12" fill="#F6F1FF"></path>
-                                <rect id="Rectangle-4" fill="#AC8BE9" x="58.0305835" y="26.1162588" width="15.6082259"
-                                    height="12.863158"></rect>
-                                <ellipse id="Oval" fill="#FFFFFF" cx="65.8346965" cy="33.0919007" rx="2.20116007"
-                                    ry="2.23319575"></ellipse>
-                            </g>
-                        </svg>
-
+                        <i class="fas fa-tree"></i>
                     </div>
-                    <p>Wallet</p>
+                    <p class="mb-2 card-header">Park Name</p>
+                    <p class="add-name"> 123 Main Street Park Ave</p>
+                    <table class="table  w-75">
+                        <thead>
+                            <span class="head">Activites</span>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                                    <p class="gray">Fishing</p>
+                                </td>
+                                <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                                    <p class="gray">Fishing</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table w-75 table-striped">
+                            <thead>
+                                <span class="head">Who's Going?</span>
+                            </thead>
+                            <tr>
+                                <td>Lily James</td>
+                            </tr>
+                            <tr>
+                                <td>Lily James</td>
+                            </tr>
+                            <tr>
+                                    <td>Lily James</td>
+                                </tr>
+                        </table>
                 </a>
-
             </div>
-            <div class="red-line col-lg-4 sm-12">
-
-                    <a href="#" class="card wallet">
-                        <div class="overlay"></div>
-                        <div class="circle">
-    
-    
-                            <svg width="78px" height="60px" viewBox="23 29 78 60" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                                <desc>Created with Sketch.</desc>
-                                <defs></defs>
-                                <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                    transform="translate(23.000000, 29.500000)">
-                                    <rect id="Rectangle-3" fill="#AC8BE9" x="67.8357511" y="26.0333433" width="9.40495664"
-                                        height="21.8788565" rx="4.70247832"></rect>
-                                    <rect id="Rectangle-3" fill="#6A5297" x="67.8357511" y="38.776399" width="9.40495664"
-                                        height="10.962961" rx="4.70247832"></rect>
-                                    <polygon id="Rectangle-2" fill="#6A5297"
-                                        points="57.3086772 0 67.1649301 26.3776902 14.4413177 45.0699507 4.58506484 18.6922605">
-                                    </polygon>
-                                    <path
-                                        d="M0,19.6104296 C0,16.2921718 2.68622235,13.6021923 5.99495032,13.6021923 L67.6438591,13.6021923 C70.9547788,13.6021923 73.6388095,16.2865506 73.6388095,19.6104296 L73.6388095,52.6639057 C73.6388095,55.9821635 70.9525871,58.672143 67.6438591,58.672143 L5.99495032,58.672143 C2.68403068,58.672143 0,55.9877847 0,52.6639057 L0,19.6104296 Z"
-                                        id="Rectangle" fill="#8B6FC0"></path>
-                                    <path
-                                        d="M47.5173769,27.0835169 C45.0052827,24.5377699 40.9347162,24.5377699 38.422622,27.0835169 L36.9065677,28.6198808 L35.3905134,27.0835169 C32.8799903,24.5377699 28.8078527,24.5377699 26.2957585,27.0835169 C23.7852354,29.6292639 23.7852354,33.7559532 26.2957585,36.3001081 L36.9065677,47.0530632 L47.5173769,36.3001081 C50.029471,33.7559532 50.029471,29.6292639 47.5173769,27.0835169"
-                                        id="Fill-12" fill="#F6F1FF"></path>
-                                    <rect id="Rectangle-4" fill="#AC8BE9" x="58.0305835" y="26.1162588" width="15.6082259"
-                                        height="12.863158"></rect>
-                                    <ellipse id="Oval" fill="#FFFFFF" cx="65.8346965" cy="33.0919007" rx="2.20116007"
-                                        ry="2.23319575"></ellipse>
-                                </g>
-                            </svg>
-    
-                        </div>
-                        <p>Wallet</p>
-                    </a>
-        </div>
-
-        <div class="red-line col-lg-4 sm-12">
-
-                <a href="#" class="card wallet">
-                    <div class="overlay"></div>
-                    <div class="circle">
 
 
-                        <svg width="78px" height="60px" viewBox="23 29 78 60" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                transform="translate(23.000000, 29.500000)">
-                                <rect id="Rectangle-3" fill="#AC8BE9" x="67.8357511" y="26.0333433" width="9.40495664"
-                                    height="21.8788565" rx="4.70247832"></rect>
-                                <rect id="Rectangle-3" fill="#6A5297" x="67.8357511" y="38.776399" width="9.40495664"
-                                    height="10.962961" rx="4.70247832"></rect>
-                                <polygon id="Rectangle-2" fill="#6A5297"
-                                    points="57.3086772 0 67.1649301 26.3776902 14.4413177 45.0699507 4.58506484 18.6922605">
-                                </polygon>
-                                <path
-                                    d="M0,19.6104296 C0,16.2921718 2.68622235,13.6021923 5.99495032,13.6021923 L67.6438591,13.6021923 C70.9547788,13.6021923 73.6388095,16.2865506 73.6388095,19.6104296 L73.6388095,52.6639057 C73.6388095,55.9821635 70.9525871,58.672143 67.6438591,58.672143 L5.99495032,58.672143 C2.68403068,58.672143 0,55.9877847 0,52.6639057 L0,19.6104296 Z"
-                                    id="Rectangle" fill="#8B6FC0"></path>
-                                <path
-                                    d="M47.5173769,27.0835169 C45.0052827,24.5377699 40.9347162,24.5377699 38.422622,27.0835169 L36.9065677,28.6198808 L35.3905134,27.0835169 C32.8799903,24.5377699 28.8078527,24.5377699 26.2957585,27.0835169 C23.7852354,29.6292639 23.7852354,33.7559532 26.2957585,36.3001081 L36.9065677,47.0530632 L47.5173769,36.3001081 C50.029471,33.7559532 50.029471,29.6292639 47.5173769,27.0835169"
-                                    id="Fill-12" fill="#F6F1FF"></path>
-                                <rect id="Rectangle-4" fill="#AC8BE9" x="58.0305835" y="26.1162588" width="15.6082259"
-                                    height="12.863158"></rect>
-                                <ellipse id="Oval" fill="#FFFFFF" cx="65.8346965" cy="33.0919007" rx="2.20116007"
-                                    ry="2.23319575"></ellipse>
-                            </g>
-                        </svg>
-
-                    </div>
-                    <p>Wallet</p>
-                </a>
-
-        </div>
-        <div class="red-line col-lg-4 sm-12">
-
-                <a href="#" class="card wallet">
-                    <div class="overlay"></div>
-                    <div class="circle">
 
 
-                        <svg width="78px" height="60px" viewBox="23 29 78 60" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
-                            <desc>Created with Sketch.</desc>
-                            <defs></defs>
-                            <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                transform="translate(23.000000, 29.500000)">
-                                <rect id="Rectangle-3" fill="#AC8BE9" x="67.8357511" y="26.0333433" width="9.40495664"
-                                    height="21.8788565" rx="4.70247832"></rect>
-                                <rect id="Rectangle-3" fill="#6A5297" x="67.8357511" y="38.776399" width="9.40495664"
-                                    height="10.962961" rx="4.70247832"></rect>
-                                <polygon id="Rectangle-2" fill="#6A5297"
-                                    points="57.3086772 0 67.1649301 26.3776902 14.4413177 45.0699507 4.58506484 18.6922605">
-                                </polygon>
-                                <path
-                                    d="M0,19.6104296 C0,16.2921718 2.68622235,13.6021923 5.99495032,13.6021923 L67.6438591,13.6021923 C70.9547788,13.6021923 73.6388095,16.2865506 73.6388095,19.6104296 L73.6388095,52.6639057 C73.6388095,55.9821635 70.9525871,58.672143 67.6438591,58.672143 L5.99495032,58.672143 C2.68403068,58.672143 0,55.9877847 0,52.6639057 L0,19.6104296 Z"
-                                    id="Rectangle" fill="#8B6FC0"></path>
-                                <path
-                                    d="M47.5173769,27.0835169 C45.0052827,24.5377699 40.9347162,24.5377699 38.422622,27.0835169 L36.9065677,28.6198808 L35.3905134,27.0835169 C32.8799903,24.5377699 28.8078527,24.5377699 26.2957585,27.0835169 C23.7852354,29.6292639 23.7852354,33.7559532 26.2957585,36.3001081 L36.9065677,47.0530632 L47.5173769,36.3001081 C50.029471,33.7559532 50.029471,29.6292639 47.5173769,27.0835169"
-                                    id="Fill-12" fill="#F6F1FF"></path>
-                                <rect id="Rectangle-4" fill="#AC8BE9" x="58.0305835" y="26.1162588" width="15.6082259"
-                                    height="12.863158"></rect>
-                                <ellipse id="Oval" fill="#FFFFFF" cx="65.8346965" cy="33.0919007" rx="2.20116007"
-                                    ry="2.23319575"></ellipse>
-                            </g>
-                        </svg>
 
-                    </div>
-                    <p>Wallet</p>
-                </a>
-                </div>
-    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap 4 requires Popper.js -->
-    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+            <!-- Bootstrap 4 requires Popper.js -->
+            <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 
-    <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+            <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
 
-    <script src="scripts/flat-ui.js"></script>
-    <script src="/scripts/parks-plus.js"></script>
+            <script src="scripts/flat-ui.js"></script>
+            <script src="/scripts/parks-plus.js"></script>
 
 </body>
 

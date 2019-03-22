@@ -264,8 +264,16 @@ checks and unchecks checkboxes and shows a selection state via updated styles
 
  }
 
+
+
  function startAuto()
  {
      var autoInput = document.querySelector("#park-location");
      var autoComplete = new google.maps.places.Autocomplete(autoInput);
  }
+
+
+function addPark()
+{
+    
+}
