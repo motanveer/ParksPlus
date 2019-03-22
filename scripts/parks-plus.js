@@ -50,24 +50,6 @@ var parkLocation = document.querySelector("#park-location");
 
 var submit = document.querySelector("#submit");
 submit.addEventListener("click", function () {
-    
-    (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('success');
-            }, false);
-          });
-        }, false);
-      })();
 
     for (var changer = 0; changer < actvitySelection.length; changer++)
     {
@@ -260,6 +242,7 @@ checks and unchecks checkboxes and shows a selection state via updated styles
         console.log("No parks found!");
     }
 
+
     
 
  }
@@ -273,7 +256,62 @@ checks and unchecks checkboxes and shows a selection state via updated styles
  }
 
 
-function addPark()
+
+
+function addPark(parkList)
 {
-    
+
+    var currentParkList =  JSON.parse(localStorage.getItem('storedParks'));
+    const savedContainer = document.querySelector("#savedParks-container");
+
+    for (var index = 0; index <= parkList.length; index++)
+    { 
+        
+        var parkCard = document.createElement();
+        parkCard.innerHTML =
+        ` <div id="${currentParkList[index].codeName}" class="red-line col-lg-4 md-12 align-items-center dflex align-self-center text-center ">
+        <a class="card wallet">
+            <div class="overlay"></div>
+            <div class="circle">
+                <i class="fas fa-tree"></i>
+            </div>
+            <p class="mb-2 card-header">${currentParkList[index].codeName}</p>
+            <p class="add-name">${currentParkList[index].parkLocation}</p>
+            <table class="table  w-75">
+                <thead>
+                    <span class="head">Activites</span>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                            <p class="gray">Fishing</p>
+                        </td>
+                        <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                            <p class="gray">Fishing</p>
+                        </td>
+                        <td><img class="icon" src="assets/SVG/fish-icon.svg">
+                            <p class="gray">Fishing</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table w-75 table-striped">
+                <thead>
+                    <span class="head">Who's Going?</span>
+                </thead>
+                <tr>
+                    <td>Lily James</td>
+                </tr>
+                
+                <tr>
+                        <td>Lily James</td>
+                    </tr>
+            </table>
+        </a>
+    </div>`
+    }
+
+
+
+
 }
