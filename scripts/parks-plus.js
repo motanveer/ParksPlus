@@ -261,6 +261,7 @@ checks and unchecks checkboxes and shows a selection state via updated styles
     }
 
     
+
  }
 
  function startAuto()
