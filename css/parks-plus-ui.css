@@ -6,8 +6,8 @@ i{
 
 .card-header
 {
-  font-size: 1.5em;
-  border-bottom: solid 1px gray;
+  font-size: 24px;
+  border-bottom: none;
   background-color: transparent;
   padding-bottom: 0;    
 
@@ -41,6 +41,7 @@ i{
   
   .card {
     width: auto;
+    min-width: 350px;
     height: auto;
     background: #fff;
     border-top-right-radius: 10px;
@@ -55,11 +56,12 @@ i{
     text-decoration: none;
     align-self: center;
     margin: 0 auto; 
+    
   }
 
  
   .add-name {
-    font-size: 21px;
+    font-size: 18px;
     color: #4C5656;
     z-index: 1000;
     transition: color 0.3s ease-out;

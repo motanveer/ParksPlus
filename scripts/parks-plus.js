@@ -68,6 +68,7 @@ submit.addEventListener("click", function () {
         var jsonParkList = JSON.stringify(parkList);
         localStorage.setItem('storedParks', jsonParkList);
         console.log(JSON.parse(localStorage.getItem('storedParks')));
+
     }
     else
     {
@@ -258,19 +259,21 @@ checks and unchecks checkboxes and shows a selection state via updated styles
 
 
 
-function addPark(parkList)
+function addPark()
 {
 
     var currentParkList =  JSON.parse(localStorage.getItem('storedParks'));
     const savedContainer = document.querySelector("#savedParks-container");
 
-    for (var index = 0; index <= parkList.length; index++)
+    for (var index = 0; index <= currentParkList.length; index++)
     { 
-        
-        var parkCard = document.createElement();
+
+        var parkCard = document.createElement('div');
+        parkCard.setAttribute("id", currentParkList[index].codeName)
+        parkCard.setAttribute("class","col-lg-4 md-12 align-items-center dflex align-self-center text-center mb-5");
         parkCard.innerHTML =
-        ` <div id="${currentParkList[index].codeName}" class="red-line col-lg-4 md-12 align-items-center dflex align-self-center text-center ">
-        <a class="card wallet">
+        
+        `<a class="card wallet">
             <div class="overlay"></div>
             <div class="circle">
                 <i class="fas fa-tree"></i>
@@ -307,10 +310,12 @@ function addPark(parkList)
                         <td>Lily James</td>
                     </tr>
             </table>
-        </a>
-    </div>`
+        </a>`;
+
+    savedContainer.appendChild(parkCard);
     }
 
+    
 
 
 
