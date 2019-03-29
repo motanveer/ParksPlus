@@ -122,6 +122,7 @@ function updateCheckbox(index) {
     if (checkboxes[counter].checked == true) {
         activityCards[index].style.border = "lightgray 2px solid";
 
+
     }
 
     if (counter == index && checkboxes[counter].checked == false) {
@@ -264,9 +265,15 @@ function addPark()
 
     var currentParkList =  JSON.parse(localStorage.getItem('storedParks'));
     const savedContainer = document.querySelector("#savedParks-container");
+    
 
-    for (var index = 0; index <= currentParkList.length; index++)
+  
+
+    for (var index = 0; index < currentParkList.length; index++)
     { 
+        {
+            var stringID = currentParkList[index].codeName +"Activities";
+            stringID = stringID.toString();
 
         var parkCard = document.createElement('div');
         parkCard.setAttribute("id", currentParkList[index].codeName)
@@ -285,16 +292,8 @@ function addPark()
                     <span class="head">Activites</span>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><img class="icon" src="assets/SVG/fish-icon.svg">
-                            <p class="gray">Fishing</p>
-                        </td>
-                        <td><img class="icon" src="assets/SVG/fish-icon.svg">
-                            <p class="gray">Fishing</p>
-                        </td>
-                        <td><img class="icon" src="assets/SVG/fish-icon.svg">
-                            <p class="gray">Fishing</p>
-                        </td>
+                    <tr id="${stringID}">
+                    
                     </tr>
                 </tbody>
             </table>
@@ -313,10 +312,97 @@ function addPark()
         </a>`;
 
     savedContainer.appendChild(parkCard);
+
+    var parkActivity = document.createElement('td');
+    var activityRow = document.getElementById(stringID);
+
+    var activityIconLocation;
+
+    //addActivity(currentParkList);
+
+    function addActivity(currentParkList)
+    {
+
+        for (var counter = 0; counter<currentParkList[index].actvitySelection[counter];counter++)
+        {
+            switch (currentParkList[index].actvitySelection[counter])
+        {
+            case "Hiking":
+            activityIconLocation = "assets/SVG/hiking-icon.svg";
+            break;
+            case "Biking":
+            activityIconLocation = "assets/SVG/biking-icon.svg";
+            break;
+            case "Fishing":
+            activityIconLocation = "assets/SVG/fish-icon.svg";
+            break;
+            case "Camping":
+            activityIconLocation = "assets/SVG/camping-icon.svg";
+            break;
+            case "Fireworks":
+            activityIconLocation = "assets/SVG/fireworks-icon.svg";
+            
+            break;
+            case "Picnic":
+            activityIconLocation = "assets/SVG/picnic-icon.svg";
+            break;
+            default:
+            //activityIconLocation = "assets/SVG/picnic-icon";
+
+
+        }
+
+        console.log(activityIconLocation);
+        }
     }
 
+        
+    /* for (var counter = 0; counter <= currentParkList[index].actvitySelection.length; counter++)
+ 
+        //console.log(currentParkList[index].codeName +"Activities");
     
+        //console.log(stringID);
 
 
+        switch (currentParkList[index].actvitySelection[counter])
+        {
+            case "Hiking":
+            activityIconLocation = "assets/SVG/hiking-icon.svg";
+            break;
+            case "Biking":
+            activityIconLocation = "assets/SVG/biking-icon.svg";
+            break;
+            case "Fishing":
+            activityIconLocation = "assets/SVG/fish-icon.svg";
+            break;
+            case "Camping":
+            activityIconLocation = "assets/SVG/camping-icon.svg";
+            break;
+            case "Fireworks":
+            activityIconLocation = "assets/SVG/fireworks-icon.svg";
+            
+            break;
+            case "Picnic":
+            activityIconLocation = "assets/SVG/picnic-icon.svg";
+            break;
+            default:
+            activityIconLocation = "assets/SVG/picnic-icon";
+
+
+         
+        }
+
+        console.log(activityIconLocation);
+        console.log(currentParkList[index].actvitySelection[counter]);
+
+        parkActivity.innerHTML =
+        `<img class="icon" src=${activityIconLocation}><p class="gray">${currentParkList[index].actvitySelection[counter]}</p>`;
+        
+        activityRow.appendChild(parkActivity);
+    }
+   */
 
 }
+}
+}
+
