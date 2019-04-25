@@ -262,13 +262,60 @@ function addPark() {
         {
             var stringID = currentParkList[index].codeName + "Activities";
             stringID = stringID.toString();
+        
+            // Here we're going to build the list of parks, to late be injected.    
+
+            let counter = 0; //holds the value for the index used to select acitivits in the upcomign forEach
+            var activityRow = document.createElement('td');
+            var activityIconLocation;
+            var iconSRC = "";
 
             console.log("🔥 Yeah Babby! " + currentParkList[index].actvitySelection);
 
             currentParkList[index].actvitySelection.forEach(() => {
-                console.log("😡 Pop");
-            });
+               // console.log("😡 Pop " +  counter);
+                
+               var currentActivity = currentParkList[index].actvitySelection[counter];
+            
+               switch (currentActivity)
+               {
+                   case "Hiking":
+                   activityIconLocation = "assets/SVG/hiking-icon.svg";
+                   break;
+                   case "Biking":
+                   activityIconLocation = "assets/SVG/biking-icon.svg";
+                   break;
+                   case "Fishing":
+                   activityIconLocation = "assets/SVG/fish-icon.svg";
+                   break;
+                   case "Camping":
+                   activityIconLocation = "assets/SVG/camping-icon.svg";
+                   break;
+                   case "Fireworks":
+                   activityIconLocation = "assets/SVG/fireworks-icon.svg";
+                   
+                   break;
+                   case "Picnic":
+                   activityIconLocation = "assets/SVG/picnic-icon.svg";
+                   break;
+                   default:
+                   //activityIconLocation = "assets/SVG/picnic-icon";
+               }
+               
+               var hold;
+               hold = `<img src="${activityIconLocation}">`;
+               iconSRC = iconSRC + hold;
+            
 
+
+               //activityRow.innerHTML = `<img src="${iconSRC}">`;
+               //iconSRC = activityRow.toString();
+               console.log(iconSRC);
+
+               counter++;
+
+            });
+            
             var parkCard = document.createElement('div');
             parkCard.setAttribute("id", currentParkList[index].codeName)
             parkCard.setAttribute("class", "col-lg-4 md-12 align-items-center dflex align-self-center text-center mb-5");
@@ -287,7 +334,7 @@ function addPark() {
                 </thead>
                 <tbody>
                     <tr id="${stringID}">
-                    
+                        ${iconSRC}
                     </tr>
                 </tbody>
             </table>
@@ -304,7 +351,10 @@ function addPark() {
                     </tr>
             </table>
         </a>`;
+        
             savedContainer.appendChild(parkCard);
+            var activityContainer = document.getElementById(stringID);
+          
         }
     }
 
