@@ -262,7 +262,7 @@ function addPark() {
         {
             var stringID = currentParkList[index].codeName + "Activities";
             stringID = stringID.toString();
-        
+
             // Here we're going to build the list of parks, to late be injected.    
 
             let counter = 0; //holds the value for the index used to select acitivits in the upcomign forEach
@@ -270,52 +270,63 @@ function addPark() {
             var activityIconLocation;
             var iconSRC = "";
 
-            console.log("🔥 Yeah Babby! " + currentParkList[index].actvitySelection);
+            //console.log("🔥 Yeah Babby! " + currentParkList[index].actvitySelection);
 
             currentParkList[index].actvitySelection.forEach(() => {
-               // console.log("😡 Pop " +  counter);
-                
-               var currentActivity = currentParkList[index].actvitySelection[counter];
-            
-               switch (currentActivity)
-               {
-                   case "Hiking":
-                   activityIconLocation = "assets/SVG/hiking-icon.svg";
-                   break;
-                   case "Biking":
-                   activityIconLocation = "assets/SVG/biking-icon.svg";
-                   break;
-                   case "Fishing":
-                   activityIconLocation = "assets/SVG/fish-icon.svg";
-                   break;
-                   case "Camping":
-                   activityIconLocation = "assets/SVG/camping-icon.svg";
-                   break;
-                   case "Fireworks":
-                   activityIconLocation = "assets/SVG/fireworks-icon.svg";
-                   
-                   break;
-                   case "Picnic":
-                   activityIconLocation = "assets/SVG/picnic-icon.svg";
-                   break;
-                   default:
-                   //activityIconLocation = "assets/SVG/picnic-icon";
-               }
-               
-               var hold;
-               hold = `<img class="icon-v" src="${activityIconLocation}">`;
-               iconSRC = iconSRC + hold;
-            
+                // console.log("😡 Pop " +  counter);
+
+                var currentActivity = currentParkList[index].actvitySelection[counter];
+
+                switch (currentActivity) {
+                    case "Hiking":
+                        activityIconLocation = "assets/SVG/hiking-icon.svg";
+                        break;
+                    case "Biking":
+                        activityIconLocation = "assets/SVG/biking-icon.svg";
+                        break;
+                    case "Fishing":
+                        activityIconLocation = "assets/SVG/fish-icon.svg";
+                        break;
+                    case "Camping":
+                        activityIconLocation = "assets/SVG/camping-icon.svg";
+                        break;
+                    case "Fireworks":
+                        activityIconLocation = "assets/SVG/fireworks-icon.svg";
+
+                        break;
+                    case "Picnic":
+                        activityIconLocation = "assets/SVG/picnic-icon.svg";
+                        break;
+                    default:
+                    //activityIconLocation = "assets/SVG/picnic-icon";
+                }
+
+                var hold;
+                hold = `<img class="icon-v" src="${activityIconLocation}">`;
+                iconSRC = iconSRC + hold;
 
 
-               //activityRow.innerHTML = `<img src="${iconSRC}">`;
-               //iconSRC = activityRow.toString();
-               console.log(iconSRC);
 
-               counter++;
+                //activityRow.innerHTML = `<img src="${iconSRC}">`;
+                //iconSRC = activityRow.toString();
+                //console.log(iconSRC);
+
+                counter++;
 
             });
-            
+
+            console.log(currentParkList[index].friendsList);
+            var namesHold;
+            var nameOut = "";
+            var nameCounter = 0;
+
+            currentParkList[index].friendsList.forEach(() => {
+                namesHold = `<tr><td>${currentParkList[index].friendsList[nameCounter]}</td></tr>`
+                nameOut = nameOut + namesHold;
+                nameCounter++;
+                console.log(nameOut);
+            })
+
             var parkCard = document.createElement('div');
             parkCard.setAttribute("id", currentParkList[index].codeName)
             parkCard.setAttribute("class", "col-lg-4 md-12 align-items-center dflex align-self-center text-center mb-5");
@@ -343,19 +354,13 @@ function addPark() {
                 <thead>
                     <span class="head">Who's Going?</span>
                 </thead>
-                <tr>
-                    <td>Lily James</td>
-                </tr>
-                
-                <tr>
-                        <td>Lily James</td>
-                    </tr>
+                ${nameOut};
             </table>
         </a>`;
-        
+
             savedContainer.appendChild(parkCard);
             var activityContainer = document.getElementById(stringID);
-          
+
         }
     }
 
