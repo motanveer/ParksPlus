@@ -356,7 +356,7 @@ function addPark() {
                 </thead>
                 ${nameOut};
             </table>
-        </a>`;
+        </a>`
 
             savedContainer.appendChild(parkCard);
             var activityContainer = document.getElementById(stringID);
