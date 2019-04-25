@@ -303,7 +303,7 @@ function addPark() {
                }
                
                var hold;
-               hold = `<img src="${activityIconLocation}">`;
+               hold = `<img class="icon-v" src="${activityIconLocation}">`;
                iconSRC = iconSRC + hold;
             
 
@@ -333,9 +333,10 @@ function addPark() {
                     <span class="head">Activites</span>
                 </thead>
                 <tbody>
-                    <tr id="${stringID}">
+                    <tr class="w-100" id="${stringID}">
                         ${iconSRC}
                     </tr>
+                    
                 </tbody>
             </table>
             <table class="table w-75 table-striped">
