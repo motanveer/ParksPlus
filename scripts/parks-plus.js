@@ -354,9 +354,9 @@ function addPark() {
                 <thead>
                     <span class="head">Who's Going?</span>
                 </thead>
-                ${nameOut};
+                ${nameOut}
             </table>
-        </a>`
+        </a>`;
 
             savedContainer.appendChild(parkCard);
             var activityContainer = document.getElementById(stringID);
