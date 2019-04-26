@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI Pro -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <!-- Loading Parks Plus UI -->
+    <link href="css/parks-plus-ui.css" rel="stylesheet">
+
+    <!-- Loading Animate.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-md">
+        <a href="index.html" class="navbar-brand parks-highlight logo"><img src="/assets/SVG/logo.svg"
+                height="52px;"></a>
+        <button class="navbar-toggler ml-auto navbar-light parks-highlight" data-toggle="collapse"
+            data-target="#navbar-menu"></button>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link parks-highlight" href="saved.html">Saved&nbsp &nbsp<span
+                            class="fui-heart park"></span></a></li>
+                <li class="nav-item"><a class="nav-link parks-highlight" href="about.html">About&nbsp &nbsp<span
+                            class="fui-star"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row content align-items-center dflex ">
+            <div class="col-sm-12 align-self-center align-items-center dflex text-center">
+                <img class="rounded mx-auto d-block shrink" width="300px;" src="/assets/SVG/about.svg">
+                <h1 class="text-center display-5">What's This?</h1>
+                <p class="about text-center col-sm-12">
+                    ParksPlus is a simple front-end web app that keeps track of Parks you'd like to visit. <br>
+
+                    It's a basic project built by <a class="parks-highlight"
+                        href="http://www.twitter.com/mohtanveer">@MohTanveer</a>
+
+                    It doesn't do much, but sure looks cool 😎
+                </p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="content align-self-center dflex align-items-center text-center col-sm-12">
+                <h2 class="text-center">💻 Built With:</h2>
+
+                <table class="table table-striped mt-3 mb-5 w-50 ">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>👢 Bootstrap 4</td>
+                            <td><a href="https://designmodo.github.io/Flat-UI/">Flat UI Theme (Free Version)</a></td>
+                        </tr>
+                        <tr>
+                            <td>💪🏾 Vanilla JS</td>
+                            <td>Well, minus Bootstrap's jquery dependency 😡</td>
+                        </tr>
+                        <tr>
+                            <td>🚀 Netify + Github Pages</td>
+                            <td>Used for hosting & deployment. Here's the <a href="https://github.com/motanveer/ParksPlus">repo</a>, please don't make fun of my code, I'm fragile AF.</td>
+                        </tr>
+                        <tr>
+                            <td>🗺 Google Places API</td>
+                            <td>Used for Autocomplete</td>
+                        </tr>
+                        <tr>
+                            <td>🎨 unDraw</td>
+                            <td>Super <a href="https://undraw.co/">awesome</a>, open source and completely free illustrations</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 requires Popper.js -->
+    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+
+
+    <script src="scripts/flat-ui.js"></script>
+
+</body>
+
+</html>
