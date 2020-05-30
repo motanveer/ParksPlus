@@ -8,8 +8,8 @@ I built ParksPlus as partially as a design excersize, and also, to see what I co
 **Check out the demo** 👉 **[here](https://parks.motanveer.com)**
 
 <img src="Parks-Plus-App.png"
-     alt="Markdown Monster icon"
-     height="650px" />
+     alt="Parks Plus Mobile View"
+     height="950px" />
 
 This project uses the following resources and technologies:
 
